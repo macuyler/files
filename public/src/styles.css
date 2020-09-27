@@ -77,6 +77,7 @@ div#path div.path-stop p {
 }
 div#path div.path-stop button {
 	font-size: 1.2rem;
+	white-space: nowrap;
 	margin-top: -2px;
 }
 div#path div.path-stop button:hover {
@@ -122,6 +123,7 @@ div.item p {
 	width: calc(100% - 30px - 30px);
 	text-align: center;
 	text-overflow: ellipsis;
+	white-space: nowrap;
 	overflow: hidden;
 	box-sizing: border-box;
 	padding: 0 5px;
