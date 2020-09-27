@@ -13,6 +13,20 @@ body {
 	color: #fff;
 }
 
+body.four04 {
+	justify-content: center;
+}
+body.four04 img {
+	max-width: 400px;
+	margin-bottom: 30px;
+}
+body.four04 h1 {
+	font-size: 2.8rem;
+}
+body.four04 h3 {
+	font-size: 1.4rem;
+}
+
 h1 {
 	margin-bottom: 20px;
 }
