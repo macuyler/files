@@ -38,6 +38,7 @@ def main():
     _, tree, _ = traverse(0, { '__depth__': -1 })
     with open('public/map.js', 'w') as map_file:
         map_file.write("const MAP_DATA = '" + json.dumps(tree['public']) + "';")
+    os.system("firebase deploy")
     return
 
 if __name__ == '__main__':
