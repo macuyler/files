@@ -67,3 +67,6 @@ node_modules/
 
 # Local Cache
 .tree
+
+# Vim
+*.swp
