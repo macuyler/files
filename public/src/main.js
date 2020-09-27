@@ -23,14 +23,18 @@ function getPathData() {
 function renderFile(file) {
 	return `<a href="${path}/${file}" target="_blank" rel="noopener noreferrer">
 		<div class="item file">
-			<p><span>File:</span>${file}</p>
+			<img src="src/file.svg" alt="File:" />
+			<p>${file}</p>
+			<div class="spacer"></div>
 		</div>
 	</a>`;
 }
 
 function renderFolder(folder) {
 	return `<div class="item folder" onclick="setPath('${path}/${folder}')">
-		<p><span>Folder:</span>${folder}</p>
+		<img src="src/folder.svg" alt="Folder:" />
+		<p>${folder}</p>
+		<div class="spacer"></div>
 	</div>`;
 }
 
