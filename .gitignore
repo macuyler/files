@@ -70,3 +70,6 @@ node_modules/
 
 # Vim
 *.swp
+
+# Mac OS
+.DS_Store
