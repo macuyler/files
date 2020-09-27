@@ -1,1 +1,1 @@
-const MAP_DATA = '{"__depth__": 0, "files": ["404.html", "index.html", "main.js", "map.js", "styles.css"], "img": {"__depth__": 1, "files": [], "bug-bounty": {"__depth__": 2, "files": [], "aiven": {"__depth__": 6, "files": ["ss-2020-09-26-3-34-53pm.png"]}}}}';
+const MAP_DATA = '{"__depth__": 0, "files": ["404.html", "index.html"], "img": {"__depth__": 1, "files": [], "bug-bounty": {"__depth__": 2, "files": [], "aiven": {"__depth__": 6, "files": ["ss-2020-09-26-3-34-53pm.png"]}}}, "src": {"__depth__": 1, "files": ["404.png", "main.js", "map.js", "styles.css"]}}';
