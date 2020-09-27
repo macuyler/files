@@ -1,6 +1,7 @@
 // Get Map Data
 const mapDiv = document.getElementById('map');
 const map = JSON.parse(MAP_DATA);
+const pathDiv = document.getElementById('path');
 
 let path = '';
 
@@ -20,8 +21,25 @@ function getPathData() {
 	return data;
 }
 
+function renderPath() {
+	let pathStops = '';
+	let brokePath = '';
+	path.split('/').forEach(function(dir) {
+		if (dir !== '') {
+			brokePath += `/${dir}`;
+			pathStops += `
+			<div class="path-stop">
+				<p>/</p>
+				<button onclick="setPath('${brokePath}')">${dir}</button>
+			</div>`;
+		}
+	});
+	return pathStops;
+}
+
 function renderFile(file) {
-	return `<a href="${path}/${file}" target="_blank" rel="noopener noreferrer">
+	return `
+	<a href="${path}/${file}" target="_blank" rel="noopener noreferrer">
 		<div class="item file">
 			<img src="src/file.svg" alt="File:" />
 			<p>${file}</p>
@@ -31,7 +49,8 @@ function renderFile(file) {
 }
 
 function renderFolder(folder) {
-	return `<div class="item folder" onclick="setPath('${path}/${folder}')">
+	return `
+	<div class="item folder" onclick="setPath('${path}/${folder}')">
 		<img src="src/folder.svg" alt="Folder:" />
 		<p>${folder}</p>
 		<div class="spacer"></div>
@@ -57,7 +76,8 @@ function renderData(data) {
 }
 
 function render() {
-	document.getElementById('map').innerHTML = renderData(getPathData());
+	pathDiv.innerHTML = renderPath();
+	mapDiv.innerHTML = renderData(getPathData());
 }
 
 render();
