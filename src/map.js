@@ -1,0 +1,1 @@
+const MAP_DATA = '{"__depth__": 0, "files": [], "img": {"__depth__": 1, "files": [], "bug-bounty": {"__depth__": 5, "files": [], "aiven": {"__depth__": 9, "files": ["ss-2020-09-26-3-34-53pm.png"]}}}}';

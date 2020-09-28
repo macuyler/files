@@ -1,0 +1,32 @@
+{
+  "name": "files",
+  "version": "1.0.0",
+  "description": "This is a simple file hosting app designed to run on firebase hosting.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./bin/map.py && node index.js",
+    "build": "./bin/map.py && ./bin/build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macuyler/files.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macuyler/files/issues"
+  },
+  "homepage": "https://github.com/Macuyler/files#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^8.0.0"
+  }
+}

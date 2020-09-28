@@ -36,9 +36,8 @@ def main():
     with open('.tree', 'r') as tree_file:
         lines = list(filter(lambda x: x[0] != '', map(parse_line, tree_file.readlines())))[:-1]
     _, tree, _ = traverse(0, { '__depth__': -1 })
-    with open('public/src/map.js', 'w') as map_file:
+    with open('src/map.js', 'w') as map_file:
         map_file.write("const MAP_DATA = '" + json.dumps(tree['public']) + "';")
-    os.system("firebase deploy")
     return
 
 if __name__ == '__main__':
