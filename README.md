@@ -2,8 +2,24 @@
 This is a simple file hosting app designed to run on firebase hosting.
 
 ## Setup
-You will have to run your own `firebase init` to get this to work for your own site.
+```
+mkdir public
+# Add some files/folders to public
 
-## How To Use
-Add some folders and files in the `public` folder and run `./deploy.py`
+npm install
+
+# Setup your firebase configuration
+firebase init
+```
+
+## Development
+```
+npm run start
+```
+
+## Deployment
+```
+npm run build
+firebase deploy
+```
 
