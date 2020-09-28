@@ -73,3 +73,9 @@ node_modules/
 
 # Mac OS
 .DS_Store
+
+# Build Direcory
+dist
+
+# Public Directory
+public/*
