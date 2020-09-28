@@ -75,7 +75,10 @@ node_modules/
 .DS_Store
 
 # Build Direcory
-dist
+dist/
 
 # Public Directory
-public/*
+public/
+
+# Map file
+src/map.js
