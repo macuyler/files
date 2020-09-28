@@ -37,3 +37,10 @@ npm run build
 firebase deploy
 ```
 
+## Misc.
+To ignore changes to `public/hello.txt` and `src/map.js`
+```
+git update-index --skip-worktree public/hello.txt
+git update-index --skip-worktree src/map.js
+```
+
