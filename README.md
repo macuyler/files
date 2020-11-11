@@ -2,12 +2,13 @@
 This is a simple file hosting app designed to run on firebase hosting.
 
 ## Setup
+1. Add some files/folders to the public directory.
+2. In the files directory run:
 ```
-mkdir public
-# Add some folders/files inside public
-
 npm install
 ```
+3. Setup Firebase
+
 ### Firebase Setup
  - Create a new project in the [Firebase console](https://console.firebase.google.com/u/0/)
  - Setup the [firebase-cli](https://firebase.google.com/docs/cli)
@@ -28,7 +29,7 @@ npm install
 
 ## Development
 ```
-npm run start
+npm start
 ```
 
 ## Deployment
