@@ -6,18 +6,32 @@ const pathDiv = document.getElementById('path');
 let path = '';
 
 function setPath(p) {
+	let pathParam = `/?path=${encodeURIComponent(p)}`;
+	if (p === '' || p === '/') pathParam = '/';
+	window.history.pushState({}, '', pathParam);
+	updatePath(p);
+}
+
+function updatePath(p) {
 	path = p;
 	render();
 }
 
 function getPathData() {
 	let data = map;
+	const validPath = [];
 	path.split('/')
-		.forEach(function(key) {
+		.every(function(key) {
+			if (key === '') return true;
 			if (Object.keys(data).includes(key)) {
 				data = data[key];
+				validPath.push(key);
+				return true;
 			}
+			return false;
 		});
+	const vp = '/'.concat(validPath.join('/'));
+	if (path !== vp) setPath(vp);
 	return data;
 }
 
@@ -80,5 +94,11 @@ function render() {
 	mapDiv.innerHTML = renderData(getPathData());
 }
 
-render();
+function loadPath() {
+	const params = new URLSearchParams(window.location.search);
+	const p = params.get('path');
+	if (p) updatePath(p);
+}
 
+loadPath();
+render();
