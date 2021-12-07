@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/Macuyler/files#readme",
   "dependencies": {
-    "caniuse-lite": "^1.0.30001208",
     "express": "^4.17.1"
   },
   "devDependencies": {
