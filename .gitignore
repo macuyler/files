@@ -82,3 +82,6 @@ public/
 
 # Map file
 src/map.js
+
+# Local Netlify folder
+.netlify
