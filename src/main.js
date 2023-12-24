@@ -18,6 +18,7 @@ function updatePath(p) {
 }
 
 function getPathData() {
+	let vp = '';
 	let data = map;
 	const validPath = [];
 	path.split('/')
@@ -30,7 +31,7 @@ function getPathData() {
 			}
 			return false;
 		});
-	const vp = '/'.concat(validPath.join('/'));
+	if (validPath.length) vp = '/'.concat(validPath.join('/'));
 	if (path !== vp) setPath(vp);
 	return data;
 }
