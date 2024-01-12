@@ -36,10 +36,10 @@ netlify deploy --prod --dir dist
 ## Firebase Deploy
 
 1. Create a new project in the [Firebase console](https://console.firebase.google.com)
-2. Setup the [firebase-cli](https://firebase.google.com/docs/cli):
+2. Setup the [firebase cli](https://firebase.google.com/docs/cli):
 
 ```
-npm install -g firebase-cli
+npm install -g firebase-tools
 ```
 
 3. Run: `firebase login`
